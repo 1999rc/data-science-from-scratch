@@ -78,3 +78,40 @@ This project is built for learners who want to:
 -Learn by doing,not copying 
 -Practice Git like real developers 
 -Make mistakes and fix them properly
+
+
+## Project Structure 
+
+This project follows a simple and beginner-friendly
+structure
+
+```text 
+data-science-from-scratch/
+|
+|--- main.py 
+| Entry point for the project
+| THis is where execution starts.
+|
+|--- utils.py
+|  Helper functions and reusable logic.
+|  Keep main.py clean and readable.
+|
+|--- requirements.txt
+|  Lists all Python dependencies.
+|  Allows anyone to recreate the environment.
+|
+|--- README.md 
+| Project documentation and learning guide.
+|
+|--- .gitignore 
+|  Telss Git which to ignore.
+|  Prevents commiting generated or system file.
+
+
+-Simple 
+-No frameworks 
+-No magic folders
+-Easy to explain in enterviews
+```
+
+ 
