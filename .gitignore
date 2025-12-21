@@ -1,2 +1,25 @@
+#---------------------
+Python generated files 
+#these are created autometically by Python
+#They should never be commited 
+#---------------------
+
+
 __pycache__
 *.pyc 
+
+
+#---------------------
+#Virtual environment 
+#ech develope creates their onw environment 
+#we only track requirements.txt instead
+#----------------------
+.venv/
+
+
+#----------------------
+#OS / Editor files
+#These differ from machine to machine 
+#-----------------------
+.DS_stroe 
+.vscode/
