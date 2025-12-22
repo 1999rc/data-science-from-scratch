@@ -5,7 +5,7 @@ Python generated files
 #---------------------
 
 
-__pycache__
+__pycache__/
 *.pyc 
 
 
@@ -16,10 +16,16 @@ __pycache__
 #----------------------
 .venv/
 
+test/
+src/test
+__pycache__/
+*.pyc 
+.ipynb_checkpoints/
+
 
 #----------------------
 #OS / Editor files
 #These differ from machine to machine 
 #-----------------------
-.DS_stroe 
+.DS_Store       
 .vscode/
