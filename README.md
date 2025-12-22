@@ -129,10 +129,17 @@ This project is beign built step by step using.
 
 
 Data science From Scratch 
+
 This project is beign built step by step using Git.
 
 GitHub Desktop,and the cannand line.
 
 
 GitHub Desktop,and the cammand line.
+
+
+This project is beign built step by step using.
+-Git.
+-GitHub Desktop
+-and the cammand line.
 
