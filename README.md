@@ -32,8 +32,8 @@ data-science-from-scratch/
 |--- requirements.txt 
 |--- .gitignore 
 |--- README.md
-VERSION=master
-VERSION=feature 
+VERSION=master-feature
+
 ```markdown
 ## how to run this project
 1 clone the repository 
