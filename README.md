@@ -33,7 +33,7 @@ data-science-from-scratch/
 |--- .gitignore 
 |--- README.md
 VERSION=master
-
+VERSION=feature 
 ```markdown
 ## how to run this project
 1 clone the repository 
