@@ -32,6 +32,7 @@ data-science-from-scratch/
 |--- requirements.txt 
 |--- .gitignore 
 |--- README.md
+VERSION=master
 
 ```markdown
 ## how to run this project
