@@ -4,7 +4,9 @@ Python generated files
 #They should never be commited 
 #---------------------
 
-
+venv/
+test/
+src/test/
 __pycache__
 *.pyc 
 
