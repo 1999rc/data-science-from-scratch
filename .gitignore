@@ -21,3 +21,4 @@ venv/
 #we only track requirements.txt instead
 #--------------------
 ds_env/
+seaborn_basics.py
