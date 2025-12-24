@@ -20,3 +20,4 @@ venv/
 #ech develope creates their onw environment 
 #we only track requirements.txt instead
 #--------------------
+ds_env/
