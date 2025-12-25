@@ -1,5 +1,6 @@
 #pandas basics --cherry-pick demo 
-import pandas as pd 
+import pandas as pd
+ 
 def pandas_demo():
 
   data={
@@ -63,5 +64,21 @@ def pandas_demo():
   df["Level"]=df["Age"].apply(lambda x:"Senior" if x >=30 else "junior")
   print(df.sort_values(by="Salary",ascending=False))
   print(df.groupby("Level")["Salary"].mean())
+def pandas_demo():
+  data={
+   "name":["Aman","Riya","kiran","Sonu","Raees"],
+   "math":[78,85,90,72,88],
+   "science":[80,89,92,70,90],
+  }
+  df=pd.DataFrame(data)
+  print("\nDataFrame:")
+  print(df)
+  df["Average"]=df(["math"]+df["science"])/2
+  print("\With Average:")
+  print(df)
+  class_avg=df["Average"].mean()
+  print("\nClass Average:",class_avg)
+  print("\nStudents above class Average:")
+  print(df[df["Average"]>class_avg])
 if __name__=='__main__':
   pandas_demo()
