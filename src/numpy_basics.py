@@ -1,4 +1,8 @@
+
 #Numpy basics -- master branch version
+
+#Numpy basics conflict demo branch
+
 import numpy as np 
 import pandas as pd
 
