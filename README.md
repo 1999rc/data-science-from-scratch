@@ -1,5 +1,5 @@
 # Data Science From Scratch
-#performing cherry-pick
+#performing cherry-pick practice commit (from branh)
 > Learn Data Science step by step using Python
 ## Who is this for?
 This repository is for:
