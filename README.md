@@ -117,4 +117,4 @@ data-science-from-scratch/
 ```
 
  
-Cherr-pick learning note;
+
