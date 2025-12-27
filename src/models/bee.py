@@ -3,24 +3,28 @@ class Bee:
         #current position 
         self.start_x=start_x
         self.start_y=start_y
-        self.path_memory=[(self.x,self.y)]
+        self.memory=Memory()
+        #self.path_memory=[(self.x,self.y)]
         #journey state
          #+1 -> going out for look honey(searching)
         #-1 -> returning home 
-        self.journey=1 
+        #self.journey=1
+        self.memory.remember(self.x,self.y) 
     def move(self,dx,dy):
         """
         Move the bee by (dx,dy)
         """
-        self.x=dx 
-        self.y=dy
-    def found_honey(self):
+        self.x+=dx 
+        self.y+=dy
+        self.memory.remember(self.x,self.y)
+    #def found_honey(self):
+    def return_home_path(self):
         """
-        Called when finds honey
-        Switch journey to return mode
+        Path bee will follow to return
         """
-        self.journey=-1 
-    def return_step(self):
+        return self.memory.recall_backward()
+        #self.journey=-1 
+    '''def return_step(self):
         """
         Move one step back using path memory
         """
@@ -28,7 +32,7 @@ class Bee:
             #remove current postion 
             self.path_memory.pop()
             #Go to previous position 
-            self.x,self.y=self.path_memory[-1]
+            self.x,self.y=self.path_memory[-1]'''
     def position(self):
         return self.x,self.y 
         
