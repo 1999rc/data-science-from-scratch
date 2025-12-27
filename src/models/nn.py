@@ -28,7 +28,7 @@ class SimpleNN:
                 z=self.w_dx*dx+self.w_dy*dy+self.bias
                 #prediction raw
                 pred=z 
-                error=target-pred 
+                error=reward(target-pred) 
                 total_error+=abs(error)
                 #gradient descent update 
                 self.w_dx+=self.lr*error*dx 
