@@ -2,7 +2,7 @@ Cherry-pick learning note;
 #Md 
 ## ML Experiment 1 
 
-- Branch;exp-ml-feature-2
+- Branch;master 
 - idea Test isolate ML changes using Git 
 cherry-pick
 - Result; Successful experiment commit 
