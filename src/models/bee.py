@@ -1,5 +1,4 @@
-from models.memory import Memory
-from models.nn import SimpleNN
+from .memory import Memory
 from .nn import SimpleNN
 class Bee:
     def __init__(self,start_x=0,start_y=0):
@@ -20,18 +19,18 @@ class Bee:
         """
         while(self.x,self.y)!=(target_x,target_y):
             print("LOOP,",self.x,self.y)
-          dx=0
-          dy=0
-          if self.x < target_x:
-            dx=1
-          elif self.x > target_x:
-            dx=-1 
-          if self.y < target_y:
-            dy=1 
-          elif self.y > target_y:
-            dy=-1 
-          self.move(dx,dy)
-          print("MOVED to",self.x,self.y)
+            dx=0
+            dy=0
+            if self.x < target_x:
+             dx=1
+            elif self.x > target_x:
+             dx=-1 
+            if self.y < target_y:
+             dy=1 
+            elif self.y > target_y:
+             dy=-1 
+             self.move(dx,dy)
+             print("MOVED to",self.x,self.y)
     def move(self,dx,dy):
         self.x+=dx 
         self.y+=dy 
@@ -58,9 +57,11 @@ class Bee:
         """
         Bee decides movement using neural network
         """
+        #action=self.brain.forward(dx,dy)
         dx=target_x-self.x 
         dy=target_y-self.y 
-        actionself.brain.forward(dx,dy)
+        action=self.brain.forward(dx,dy)
         self.x+=action 
+        self.y+=action
         self.memory.remember(self.x,self.y)
         return action
