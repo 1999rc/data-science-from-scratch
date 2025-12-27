@@ -1,11 +1,11 @@
-Cherry-pick learning note;
+
 #Md 
 ## ML Experiment 1 
 
-D
-- Branch;exp-ml-feature-3 
 
-- branch;exp-ml-feature-
+
+- Branch;exp-ml-feature-3 
+- Branch;exp-ml-feature-2
 - exp;add ML experiment 1 notes
 - idea Test isolate ML changes using Git 
 cherry-pick
