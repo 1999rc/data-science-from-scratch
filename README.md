@@ -1,3 +1,4 @@
+
 #Data Science From Scratch 
 > Add cherry-pick demo:this line exists to demonstrate 
 Git cherry-pick conflict 
@@ -117,4 +118,11 @@ data-science-from-scratch/
 ```
 
  
+
+
+Data science From Scratch 
+This project is beign built step by step using.
+-Git.
+-GitHub Desktop
+-and the cammand line.
 
