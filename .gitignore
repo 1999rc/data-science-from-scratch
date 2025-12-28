@@ -17,7 +17,8 @@ __pycache__
 #we only track requirements.txt instead
 #----------------------
 .venv/
-
+ds_env/
+src/seaborn_basics.py
 
 #----------------------
 #OS / Editor files
