@@ -1,8 +1,8 @@
 
 #Md 
 ## ML Experiment 2 
-- Goal:Compare models
-- Status:Draft
+- Goal:Improve accuracy
+- Status:In Progress
 
 - Branch;exp-ml-feature-3 
 - Branch;exp-ml-feature-2
