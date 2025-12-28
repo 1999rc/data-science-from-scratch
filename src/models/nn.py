@@ -4,7 +4,7 @@ class SimpleNN:
     stay/right
     based on distance from target
     """
-    def __init__(self,lr=0.1):
+    def __init__(self,lr=0.01):
         self.w_dx=0.0
         self.w_dy=0.0
         self.bias=0.0
@@ -57,10 +57,10 @@ class SimpleNN:
             f"w2={self.w2},bias={self.bias}"
             )
 #in python >>
-'''
-after bee finishing journey 
+
+#after bee finishing journey 
 generator=TrainDataGenerator(target_x=0,
 target_y=0)
 X,y=generator.generate(bee.memory.path)
 bee.brain.train(X,y,epochs=20)
-'''       
+       
