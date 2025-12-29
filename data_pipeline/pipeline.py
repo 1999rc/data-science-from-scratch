@@ -1,16 +1,19 @@
-from ingest import ingest_data 
-from validate import validate_data
-from clean import clean_data
-from transform import transform_data
-from scrape import scrape_data
+from data_pipeline.ingest import ingest_data 
+from data_pipeline.validate import validate_data
+from data_pipeline.clean import clean_data
+from data_pipeline.transform import transform_data
+from data_pipeline.save import save_to_csv
+from data_pipeline.scrape import scrape_data
 import os
 import logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s",
+    
     handlers=[
         logging.StreamHandler(), #console
-        logging.FileHandler("pipeline.log") #file 
+        logging.FileHandler("pipeline.log") 
+       
     ]
 ) 
 logger=logging.getLogger(__name__)
@@ -19,7 +22,7 @@ def save_to_csv(df,output_dir="output",filename="quotes.csv"):
     os.makedirs(output_dir,exist_ok=True)
 
     filepath=os.path.join(output_dir,filename)
-    df.to_csv(filepath,index=False)
+    df.to_csv("output/final_output.csv",index=False)
     logger.info("[SAVED] Data to %s",filepath)
     #print(f"[SAVE] Data saved to {filepath}")
 def run_pipeline(source="csv",data_path=None):

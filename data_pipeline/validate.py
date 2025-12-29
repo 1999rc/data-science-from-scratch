@@ -10,4 +10,4 @@ def validate_data(df:pd.DataFrame)->None:
         print(missing)
     else:
         print("[VALIDATE] No missing values found")
-        
+        return df 
