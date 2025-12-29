@@ -1,8 +1,10 @@
+import logging 
 import requests
 import pandas as pd 
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
+logger=logging.getLogger(__name__)
 def scrape_data():
-    print(f"[SCRAPE] Fetching data from WEB...")
+    logger.info("Fetching data from web...")
     url="https://quotes.toscrape.com/"
     response=requests.get(url)
     if response.status_code!=200:
@@ -12,5 +14,5 @@ def scrape_data():
     data={"quote":[q.text for q in quotes]}
     df=pd.DataFrame(data)
 
-    print(f"[SCRAPE] Colected {len(df)} rows")
+    logger.info(f"Collected {len(df)} rows")
     return df 
