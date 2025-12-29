@@ -7,7 +7,19 @@
 
 
 __pycache__/
+*.pyv
 
+# logs 
+*.log 
+
+# Output data 
+output/
+
+# Pytest
+.pytest_cache/
+
+#Virtual env
+ds_env/ 
 .venv/
 venv/
 
