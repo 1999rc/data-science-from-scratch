@@ -132,10 +132,10 @@ Data science From Scratch
 
 This project is beign built step by step using Git.
 
-GitHub Desktop,and the cannand line.
+GitHub Desktop,and the command line.
 
 
-GitHub Desktop,and the cammand line.
+GitHub Desktop,and the command line.
 
 
 This project is beign built step by step using.
@@ -143,3 +143,23 @@ This project is beign built step by step using.
 -GitHub Desktop
 -and the cammand line.
 
+## Project Status (Pause)
+
+Version:Pipeline-v1.0
+Status:Stable and Tagged 
+
+### Completed
+- Web scraping using BeautinfulSoup 
+- Data pipeline execution 
+- CSV output generation 
+- Logging implemented (no print statements)
+- Unit tests added 
+- Git commit and release tag creaced 
+
+### Next Steps (when Resumed)
+- Improve error handling 
+- Add configuration via YAML/ENV
+- Extend tests for edge cases 
+- Optional:scheduling / automation 
+
+Paused after succesful v1.0.release. 
